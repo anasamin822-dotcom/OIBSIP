@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Anas Amin - Front-End Developer</title>
+<meta name="description" content="Portfolio of Md Anas Amin, B.Tech CSE student and front-end developer from Dehradun. Real projects, skills and contact.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23090912'/><path d='M50 18 80 82H66L50 46 34 82H20z' fill='%238b5cf6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="spot" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#home">anas<span>.dev</span></a>
+  <input type="checkbox" id="mt" class="mt" aria-label="Toggle menu">
+  <label for="mt" class="burger" aria-hidden="true"><span></span><span></span></label>
+  <nav class="links">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="chip"><span class="live"></span>Open to remote internships</p>
+    <h1><span class="line"><span>Md Anas</span></span><span class="line"><span class="grad">Amin</span></span></h1>
+    <p class="role">I build <span id="type"></span><span class="caret"></span></p>
+    <p class="lead">B.Tech CSE student in Dehradun. I turn designs into fast, responsive, good-looking websites with HTML, CSS, JavaScript and React.</p>
+    <div class="actions">
+      <a class="mb-btn" href="#projects"><span>View my work</span></a>
+      <a class="ghost" href="#contact">Say hello <i>&rarr;</i></a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="orbit o1"></div><div class="orbit o2"></div>
+    <div class="photo-wrap" data-tilt>
+      <div class="photo-ring"></div>
+      <div class="avatar"><span>MA</span><img src="anas.png" alt="Md Anas Amin" onerror="this.remove()"></div>
+    </div>
+    <span class="tag t1">HTML</span><span class="tag t2">CSS</span><span class="tag t3">JavaScript</span><span class="tag t4">React</span>
+  </div>
+  <a class="scroll" href="#about" aria-label="Scroll down"><i></i></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>HTML</span><b>/</b><span>CSS</span><b>/</b><span>JavaScript</span><b>/</b><span>TypeScript</span><b>/</b><span>React</span><b>/</b><span>C#</span><b>/</b><span>Git</span><b>/</b><span>GitHub</span><b>/</b>
+  <span>HTML</span><b>/</b><span>CSS</span><b>/</b><span>JavaScript</span><b>/</b><span>TypeScript</span><b>/</b><span>React</span><b>/</b><span>C#</span><b>/</b><span>Git</span><b>/</b><span>GitHub</span><b>/</b>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="eyebrow">01 / About</p>
+  <div class="about-grid">
+    <h2 class="reveal">Design-minded.<br><span class="grad">Detail-obsessed.</span></h2>
+    <div class="reveal">
+      <p class="about">I am a second-year Computer Science student at Tula's University, Dehradun. I like building things that feel smooth on a phone as much as on a laptop. Right now I am learning React, Tailwind CSS, Python and C++ data structures, and I am doing a web development internship.</p>
+      <div class="stats">
+        <div class="stat spotlight"><b data-count="8.40" data-dec="2">0</b><span>First year CGPA</span></div>
+        <div class="stat spotlight"><b>2025-29</b><span>B.Tech CSE</span></div>
+        <div class="stat spotlight"><b data-count="6">0</b><span>Featured projects</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="eyebrow">02 / Skills</p>
+  <h2 class="reveal">What I work with</h2>
+  <div class="skills">
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#f97316"></i><h3>HTML</h3><p>Semantic, accessible structure.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#38bdf8"></i><h3>CSS</h3><p>Flexbox, Grid, animation.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#facc15"></i><h3>JavaScript</h3><p>DOM, events, ES6+.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#3b82f6"></i><h3>TypeScript</h3><p>Typed, safer JavaScript.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#22d3ee"></i><h3>React</h3><p>Components and state.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#a78bfa"></i><h3>C#</h3><p>Backend basics, .NET.</p></div>
+    <div class="skill spotlight reveal"><i class="dot" style="--c:#f472b6"></i><h3>Git and GitHub</h3><p>Commits, repos, Pages.</p></div>
+    <div class="skill spotlight learning reveal"><i class="dot" style="--c:#34d399"></i><h3>Learning now</h3><p>Tailwind CSS, Python, C++ DSA.</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="eyebrow">03 / Projects</p>
+  <h2 class="reveal">Things I have built</h2>
+  <div class="projects">
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a1"><span>Frames</span></div>
+      <h3>Frames - Image Gallery</h3>
+      <p>Responsive photo gallery with filters and a lightbox viewer.</p>
+      <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/HorizonTechX_ImageGallery" target="_blank" rel="noopener">GitHub</a><a href="https://anasamin822-dotcom.github.io/HorizonTechX_ImageGallery" target="_blank" rel="noopener">Live demo &rarr;</a></div>
+    </article>
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a2"><span>Invoice</span></div>
+      <h3>Invoice Review</h3>
+      <p>Browser-only invoice review app with field highlights, approve and edit.</p>
+      <ul class="tech"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/invoice-review" target="_blank" rel="noopener">GitHub</a><a href="https://invoice-review-red.vercel.app" target="_blank" rel="noopener">Live demo &rarr;</a></div>
+    </article>
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a3"><span>3D</span></div>
+      <h3>EstateVision 3D</h3>
+      <p>Real-estate landing page with a 3D walkthrough and an EMI calculator.</p>
+      <ul class="tech"><li>Three.js</li><li>GSAP</li><li>JavaScript</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/estate-vision-3d" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+    </article>
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a4"><span>Admin</span></div>
+      <h3>SecureRegent Dashboard</h3>
+      <p>Admin dashboard with a light default theme and a dark mode toggle.</p>
+      <ul class="tech"><li>Dashboard</li><li>Light and dark</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/SecureRegent_Dashboard" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+    </article>
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a5"><span>Portfolio</span></div>
+      <h3>Horizon TechX Portfolio</h3>
+      <p>My main portfolio with interactive effects, built for my Horizon TechX internship.</p>
+      <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/HorizonTechX_Portfolio" target="_blank" rel="noopener">GitHub</a><a href="https://anasamin822-dotcom.github.io/HorizonTechX_Portfolio/" target="_blank" rel="noopener">Live demo &rarr;</a></div>
+    </article>
+    <article class="card spotlight reveal" data-tilt>
+      <div class="art a6"><span>AI</span></div>
+      <h3>AI Gym Coach</h3>
+      <p>Posture detection app built for a hackathon with computer vision.</p>
+      <ul class="tech"><li>MediaPipe</li><li>OpenCV</li><li>Groq</li></ul>
+      <div class="links2"><a href="https://github.com/anasamin822-dotcom/ai-gym-coach" target="_blank" rel="noopener">GitHub &rarr;</a></div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <p class="eyebrow">04 / Contact</p>
+  <h2 class="big reveal">Let's build<br><span class="grad">something good.</span></h2>
+  <p class="about reveal">Open to remote front-end internships and freelance work. Email is the fastest way.</p>
+  <div class="contact-row reveal">
+    <a class="mb-btn" href="mailto:anasamin822@gmail.com"><span>anasamin822@gmail.com</span></a>
+    <a class="ghost" href="https://github.com/anasamin822-dotcom" target="_blank" rel="noopener">GitHub <i>&rarr;</i></a>
+    <a class="ghost" href="https://www.linkedin.com/in/anas-amin-441b1136a/" target="_blank" rel="noopener">LinkedIn <i>&rarr;</i></a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wordmark" aria-hidden="true">ANAS</div>
+  <p>&copy; 2026 Md Anas Amin. Built for the Oasis Infobyte internship.</p>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="scene.js"></script>
+</body>
+</html>
