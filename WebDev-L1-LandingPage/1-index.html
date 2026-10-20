@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyLoop - Study week, sorted.</title>
+<meta name="description" content="StudyLoop is a weekly study planner concept for students: plan, focus and review in one loop. Demo landing page built with HTML and CSS only.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23111'/><circle cx='50' cy='50' r='24' fill='none' stroke='%23c6ff3d' stroke-width='12'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="ring"></span>StudyLoop</a>
+  <input type="checkbox" id="menu" class="menu-toggle" aria-label="Toggle menu">
+  <label for="menu" class="burger" aria-hidden="true"><span></span><span></span></label>
+  <nav class="links">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#voices">Students</a>
+    <a class="pill-btn" href="#cta">Get early access <i>&rarr;</i></a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="hero-copy">
+      <p class="eyebrow"><b>New</b> Concept product for students</p>
+      <h1>Study week,<br><span class="mark">sorted.</span></h1>
+      <p class="lead">StudyLoop turns classes, deadlines and exams into one calm weekly plan. Plan it. Focus on it. Review it. Repeat.</p>
+      <div class="cta-row">
+        <a class="btn btn-lime" href="#cta">Join the waitlist <i>&rarr;</i></a>
+        <a class="btn btn-line" href="#how">See how it works</a>
+      </div>
+      <ul class="trust">
+        <li><b>25 min</b> focus loops</li>
+        <li><b>7 days</b> one view</li>
+        <li><b>0</b> clutter</li>
+      </ul>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <p class="s-day">Wednesday</p>
+          <h3 class="s-title">Today's loop</h3>
+          <div class="s-ring"><span>72%</span></div>
+          <div class="s-task t1"><i></i>CSS review<em>25m</em></div>
+          <div class="s-task t2"><i></i>Python JSON<em>40m</em></div>
+          <div class="s-task t3"><i></i>C++ stack<em>30m</em></div>
+        </div>
+      </div>
+      <div class="float f1"><b>Exam in 3 days</b><small>DSA mid-sem</small></div>
+      <div class="float f2"><b>12 day streak</b><small>keep it going</small></div>
+      <div class="float f3"><b>Focus on</b><small>24:13 left</small></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-label="Subjects students plan">
+    <div class="track">
+      <span>Mathematics</span><span>&#9679;</span><span>Data Structures</span><span>&#9679;</span><span>Python</span><span>&#9679;</span><span>Web Development</span><span>&#9679;</span><span>Physics</span><span>&#9679;</span><span>Digital Electronics</span><span>&#9679;</span>
+      <span>Mathematics</span><span>&#9679;</span><span>Data Structures</span><span>&#9679;</span><span>Python</span><span>&#9679;</span><span>Web Development</span><span>&#9679;</span><span>Physics</span><span>&#9679;</span><span>Digital Electronics</span><span>&#9679;</span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <p class="kicker">Features</p>
+    <h2 class="h2">Everything a focused week needs.<br><span class="soft">Nothing it does not.</span></h2>
+
+    <div class="bento">
+      <article class="cell c-plan reveal">
+        <h3>One plan for the whole week</h3>
+        <p>Drop in classes, deadlines and exams. StudyLoop spreads the work so no day is overloaded.</p>
+        <div class="week" aria-hidden="true">
+          <div><b>M</b><i style="--h:70%"></i></div><div><b>T</b><i style="--h:45%"></i></div><div><b>W</b><i style="--h:90%"></i></div><div><b>T</b><i style="--h:55%"></i></div><div><b>F</b><i style="--h:35%"></i></div><div><b>S</b><i style="--h:60%"></i></div><div><b>S</b><i style="--h:20%"></i></div>
+        </div>
+      </article>
+      <article class="cell c-focus reveal">
+        <h3>Focus timer</h3>
+        <p>25 minute loops with short breaks.</p>
+        <div class="dial" aria-hidden="true"><span>24:13</span></div>
+      </article>
+      <article class="cell c-remind reveal">
+        <h3>Smart nudges</h3>
+        <p>A gentle reminder the evening before.</p>
+        <svg class="bell" viewBox="0 0 64 64" width="72" height="72" aria-hidden="true"><path d="M32 6a4 4 0 0 1 4 4v2c9 2 14 9 14 18v10l5 8H9l5-8V30c0-9 5-16 14-18v-2a4 4 0 0 1 4-4z" fill="#111"/><path d="M26 54a6 6 0 0 0 12 0z" fill="#111"/></svg>
+      </article>
+      <article class="cell c-review reveal">
+        <h3>Sunday review</h3>
+        <p>See what you finished, what slipped and what moves to next week.</p>
+        <div class="checks" aria-hidden="true"><span class="ok">Done 14</span><span class="no">Slipped 3</span><span class="mv">Moved 2</span></div>
+      </article>
+      <article class="cell c-streak reveal">
+        <h3>Streaks</h3>
+        <p>Small wins, visible.</p>
+        <div class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how" class="section how">
+    <p class="kicker">How it works</p>
+    <h2 class="h2">Three steps. One loop.</h2>
+    <div class="stack">
+      <article class="step s1"><span class="num">01</span><div><h3>Add your subjects</h3><p>Enter subjects, deadlines and how much time you can give each day.</p></div></article>
+      <article class="step s2"><span class="num">02</span><div><h3>Get your week</h3><p>StudyLoop builds a balanced plan you can reorder in seconds.</p></div></article>
+      <article class="step s3"><span class="num">03</span><div><h3>Focus, then review</h3><p>Work in short loops. On Sunday, look back and reset.</p></div></article>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section id="voices" class="section">
+    <p class="kicker">Students</p>
+    <h2 class="h2">Sample words from sample students.</h2>
+    <div class="voices">
+      <blockquote class="q q1"><p>I stopped rewriting my to-do list every night. The plan is just there.</p><cite>Sample student, B.Tech 1st year</cite></blockquote>
+      <blockquote class="q q2"><p>The Sunday review showed me how much revision I was skipping.</p><cite>Sample student, B.Sc 2nd year</cite></blockquote>
+      <blockquote class="q q3"><p>Quiet, quick, and it works great on my phone.</p><cite>Sample student, Class 12</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta">
+    <div class="cta-inner">
+      <h2>Ready for a calmer study week?</h2>
+      <p>Join the waitlist. This is a demo page, so the form is a placeholder.</p>
+      <form class="join" action="mailto:hello@example.com" method="post" enctype="text/plain">
+        <label class="sr" for="em">Email</label>
+        <input id="em" type="email" name="email" placeholder="you@college.edu">
+        <button class="btn btn-lime" type="submit">Get early access <i>&rarr;</i></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div class="foot-brand"><a class="brand" href="#top"><span class="ring"></span>StudyLoop</a><p>A demo landing page for the Oasis Infobyte web development internship.</p></div>
+    <div><h4>Contact</h4><a href="mailto:hello@example.com">hello@example.com</a><a href="tel:+910000000000">+91 00000 00000</a></div>
+    <div><h4>Social</h4><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">X</a></div>
+    <div><h4>Explore</h4><a href="#features">Features</a><a href="#how">How it works</a><a href="#voices">Students</a></div>
+  </div>
+  <div class="wordmark" aria-hidden="true">StudyLoop</div>
+  <p class="copy">&copy; 2026 StudyLoop demo. Placeholder links.</p>
+</footer>
+</body>
+</html>
