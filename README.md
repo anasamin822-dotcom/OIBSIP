@@ -1,2 +1,3 @@
 # OIBSIP
-Oasis Infobyte internship (Web Development, Level 1) - Md Anas Amin
+
+A small collection: my portfolio, a study planner landing page, and a temperature converter.
